@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  /*function fib(n, memo) {
+    if (n < 2) {
+      return n;
+    }
+    if(!memo[n]) {
+        console.log(fib(n - 1, memo))
+        console.log(fib(n - 2, memo))
+      memo[n] = fib(n - 1, memo) + fib(n - 2, memo);
+
+    }
+    return memo[n];
+  }
+  console.log(fib(5, {}));*/
+  function fib(n,max){
+
+      if (n===1)
+      {
+         var i1=0
+         var i2=1
+          n=2
+      }
+      console.log(i1)
+      console.log(i2)
+      var i=i1+i2
+      i1=i2
+      i2=i
+      if (i2>=max){
+        return
+      }
+      fib(n,max)
+
+
+  }
+
+  fib(1,7)
+
+</script>
+
+</body>
+</html>
