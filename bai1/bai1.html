@@ -19,29 +19,17 @@
     return memo[n];
   }
   console.log(fib(5, {}));*/
-  function fib(n,max){
-
-      if (n===1)
-      {
-         var i1=0
-         var i2=1
-          n=2
+  let fibonacci = (n) => {
+      if (n <= 1) {
+          return n;
       }
-      console.log(i1)
-      console.log(i2)
-      var i=i1+i2
-      i1=i2
-      i2=i
-      if (i2>=max){
-        return
-      }
-      fib(n,max)
-
-
+      return fibonacci(n - 1) + fibonacci(n - 2);
   }
-
-  fib(1,7)
-
+  let sum = 0;
+  for (let i = 0; i < 10; i++) {
+      sum += fibonacci(i);
+  }
+  console.log(sum);
 </script>
 
 </body>
